@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration debug="false" xmlns="http://ch.qos.logback/xml/ns/logback"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="http://ch.qos.logback/xml/ns/logback https://raw.githubusercontent.com/enricopulatzo/logback-XSD/master/src/main/xsd/logback.xsd">
+
+    <!--    Silencing Startup Messages, Optimizing Logging Performance.-->
+    <!--    discard the loback initialization logs, don't listen [No Operation].-->
+    <!--    if debug is turned ON in <configuration>, this will be ignored.-->
+    <!--    During development and debugging, it's generally beneficial to have access to status messages to diagnose
+     configuration issues or unexpected logging behavior.
+      However, for production environments or when you are confident in your configuration,
+       using NopStatusListener can help improve logging performance and reduce unnecessary noise in logs.-->
+    <statusListener class="ch.qos.logback.core.status.NopStatusListener"/>
+
+    <!--    print the logback framework initialization to the console.-->
+    <!--    <statusListener class="ch.qos.logback.core.status.OnConsoleStatusListener"/>-->
+
+    <property name="CONSOLE_PATTERN" value="%date %highlight(%-5level) %cyan(%logger{5}@[%-4.30thread]) - %msg%n"/>
+    <property name="FILE_PATTERN" value="%d{yyyy-MM-dd_HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"/>
+    <property name="FILE_NAME_PATTERN" value="-%d{yyyy-MM-dd}.%i.log"/>
+    <!--    Read properties from spring app.prop file-->
+    <springProperty scope="context" name="APP_NAME" source="spring.application.name" defaultValue="spring-boot-app"/>
+
+    <!--    Send log messages to System.out, default target is System.out.-->
+    <appender name="OUTPUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>${CONSOLE_PATTERN}</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Send log messages to a file at "/Users/aegon/Learn/projects/logs/*.log" -->
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>${FILE_PATTERN}</pattern>
+        </encoder>
+        <!-- rollover daily -->
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>logs/${APP_NAME}${FILE_NAME_PATTERN}</fileNamePattern>
+            <!-- each file should be at most 100MB, keep 60 days worth of history, but at most 20GB -->
+            <maxFileSize>100MB</maxFileSize>
+            <maxHistory>60</maxHistory>
+            <totalSizeCap>20GB</totalSizeCap>
+            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <maxFileSize>1MB</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+        </rollingPolicy>
+    </appender>
+
+    <root level="TRACE">
+        <appender-ref ref="OUTPUT"/>
+        <appender-ref ref="FILE"/>
+    </root>
+
+</configuration>

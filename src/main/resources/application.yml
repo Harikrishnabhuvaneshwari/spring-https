@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: spring-logback-example
+  datasource:
+    url: jdbc:postgresql://localhost:5433/spring?currentSchema=studentdb
+    username: postgres
+    password: jonsnow
+    driverClassName: org.postgresql.Driver
+  jpa:
+    showSql: true
+    hibernate:
+      ddlAuto: update

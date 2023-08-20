@@ -1,0 +1,177 @@
+== Info:   Trying 127.0.0.1:8080...
+== Info: Connected to localhost (127.0.0.1) port 8080 (#0)
+== Info: ALPN: offers h2,http/1.1
+== Info: (304) (OUT), TLS handshake, Client hello (1):
+=> Send SSL data, 314 bytes (0x13a)
+0000: 01 00 01 36 03 03 31 4c 12 48 27 52 34 a1 fe dd ...6..1L.H'R4...
+0010: 69 f4 c2 93 5a 0d 49 13 24 8f e7 de 5a 63 5f 8d i...Z.I.$...Zc_.
+0020: ac 59 09 ad 40 df 20 6a 14 71 1e be da d4 5f b8 .Y..@. j.q...._.
+0030: d1 24 0a b2 f6 62 ad af 81 24 f2 43 7d ee 18 44 .$...b...$.C}..D
+0040: 9b d8 48 e5 15 ea 87 00 62 13 03 13 02 13 01 cc ..H.....b.......
+0050: a9 cc a8 cc aa c0 30 c0 2c c0 28 c0 24 c0 14 c0 ......0.,.(.$...
+0060: 0a 00 9f 00 6b 00 39 ff 85 00 c4 00 88 00 81 00 ....k.9.........
+0070: 9d 00 3d 00 35 00 c0 00 84 c0 2f c0 2b c0 27 c0 ..=.5...../.+.'.
+0080: 23 c0 13 c0 09 00 9e 00 67 00 33 00 be 00 45 00 #.......g.3...E.
+0090: 9c 00 3c 00 2f 00 ba 00 41 c0 11 c0 07 00 05 00 ..<./...A.......
+00a0: 04 c0 12 c0 08 00 16 00 0a 00 ff 01 00 00 8b 00 ................
+00b0: 2b 00 09 08 03 04 03 03 03 02 03 01 00 33 00 26 +............3.&
+00c0: 00 24 00 1d 00 20 b3 12 3b ad 82 9a eb 95 9c 52 .$... ..;......R
+00d0: 61 96 82 47 c0 79 1e a0 f8 26 6b 82 ad 6e 5a db a..G.y...&k..nZ.
+00e0: 44 d5 0c ee df 32 00 00 00 0e 00 0c 00 00 09 6c D....2.........l
+00f0: 6f 63 61 6c 68 6f 73 74 00 0b 00 02 01 00 00 0a ocalhost........
+0100: 00 0a 00 08 00 1d 00 17 00 18 00 19 00 0d 00 18 ................
+0110: 00 16 08 06 06 01 06 03 08 05 05 01 05 03 08 04 ................
+0120: 04 01 04 03 02 01 02 03 00 10 00 0e 00 0c 02 68 ...............h
+0130: 32 08 68 74 74 70 2f 31 2e 31                   2.http/1.1
+== Info: (304) (IN), TLS handshake, Server hello (2):
+<= Recv SSL data, 122 bytes (0x7a)
+0000: 02 00 00 76 03 03 cc 20 38 40 49 e3 a2 b2 71 e3 ...v... 8@I...q.
+0010: aa dd b8 5c 26 35 ce 6a cc 2c 9c 8b 35 11 41 7e ...\&5.j.,..5.A~
+0020: aa 56 84 41 36 1b 20 6a 14 71 1e be da d4 5f b8 .V.A6. j.q...._.
+0030: d1 24 0a b2 f6 62 ad af 81 24 f2 43 7d ee 18 44 .$...b...$.C}..D
+0040: 9b d8 48 e5 15 ea 87 13 03 00 00 2e 00 2b 00 02 ..H..........+..
+0050: 03 04 00 33 00 24 00 1d 00 20 85 5a 4a c3 b8 f8 ...3.$... .ZJ...
+0060: ad 82 ab 7f 9f b6 5b d4 e5 38 2c 55 63 aa 2f 17 ......[..8,Uc./.
+0070: 52 c3 5a a0 08 c4 6a 52 35 2d                   R.Z...jR5-
+== Info: (304) (IN), TLS handshake, Unknown (8):
+<= Recv SSL data, 32 bytes (0x20)
+0000: 08 00 00 1c 00 1a 00 0a 00 16 00 14 00 1d 00 17 ................
+0010: 00 18 00 19 00 1e 01 00 01 01 01 02 01 03 01 04 ................
+== Info: (304) (IN), TLS handshake, Certificate (11):
+<= Recv SSL data, 922 bytes (0x39a)
+0000: 0b 00 03 96 00 00 03 92 00 03 8d 30 82 03 89 30 ...........0...0
+0010: 82 02 71 a0 03 02 01 02 02 08 56 c0 9f 1f 11 b8 ..q.......V.....
+0020: 11 6d 30 0d 06 09 2a 86 48 86 f7 0d 01 01 0c 05 .m0...*.H.......
+0030: 00 30 73 31 0b 30 09 06 03 55 04 06 13 02 49 4e .0s1.0...U....IN
+0040: 31 13 30 11 06 03 55 04 08 13 0a 54 61 6d 69 6c 1.0...U....Tamil
+0050: 20 4e 61 64 75 31 10 30 0e 06 03 55 04 07 13 07  Nadu1.0...U....
+0060: 43 68 65 6e 6e 61 69 31 18 30 16 06 03 55 04 0a Chennai1.0...U..
+0070: 13 0f 73 70 72 69 6e 67 2d 74 65 73 74 2d 73 73 ..spring-test-ss
+0080: 6c 31 14 30 12 06 03 55 04 0b 13 0b 73 70 72 69 l1.0...U....spri
+0090: 6e 67 2d 74 65 73 74 31 0d 30 0b 06 03 55 04 03 ng-test1.0...U..
+00a0: 13 04 74 65 73 74 30 1e 17 0d 32 33 30 38 31 39 ..test0...230819
+00b0: 31 30 34 33 31 37 5a 17 0d 32 33 31 31 31 37 31 104317Z..2311171
+00c0: 30 34 33 31 37 5a 30 73 31 0b 30 09 06 03 55 04 04317Z0s1.0...U.
+00d0: 06 13 02 49 4e 31 13 30 11 06 03 55 04 08 13 0a ...IN1.0...U....
+00e0: 54 61 6d 69 6c 20 4e 61 64 75 31 10 30 0e 06 03 Tamil Nadu1.0...
+00f0: 55 04 07 13 07 43 68 65 6e 6e 61 69 31 18 30 16 U....Chennai1.0.
+0100: 06 03 55 04 0a 13 0f 73 70 72 69 6e 67 2d 74 65 ..U....spring-te
+0110: 73 74 2d 73 73 6c 31 14 30 12 06 03 55 04 0b 13 st-ssl1.0...U...
+0120: 0b 73 70 72 69 6e 67 2d 74 65 73 74 31 0d 30 0b .spring-test1.0.
+0130: 06 03 55 04 03 13 04 74 65 73 74 30 82 01 22 30 ..U....test0.."0
+0140: 0d 06 09 2a 86 48 86 f7 0d 01 01 01 05 00 03 82 ...*.H..........
+0150: 01 0f 00 30 82 01 0a 02 82 01 01 00 a5 87 67 8c ...0..........g.
+0160: d4 6e 0b fc 3e 0a 7c 6a 71 ae da b6 e2 cd 56 53 .n..>.|jq.....VS
+0170: 8f 28 16 f5 34 92 67 10 d5 ef 5e 59 d9 8c cc 5d .(..4.g...^Y...]
+0180: 04 64 29 7c 5f e5 24 f2 59 63 86 39 a7 63 23 94 .d)|_.$.Yc.9.c#.
+0190: 17 6e 11 85 bd 60 fd 99 1f 3b 3c aa 4c f3 ce e8 .n...`...;<.L...
+01a0: bb 21 3b 8a da 14 fd 02 50 3a 2d 9c ec b7 1c b1 .!;.....P:-.....
+01b0: d7 13 f1 a2 1e ba 0c 44 87 3d 5c d5 df 74 eb ea .......D.=\..t..
+01c0: b9 1c 03 08 5e 45 07 81 a2 36 a0 00 1b be d8 da ....^E...6......
+01d0: 96 49 8b bd 46 38 84 85 9a 7f 70 d1 b4 bb 2c f6 .I..F8....p...,.
+01e0: 6a 65 a3 17 bd 3f c7 4c e9 07 60 78 cf 25 2d 36 je...?.L..`x.%-6
+01f0: 32 1f 22 7b cf 47 00 7d 7c d8 fd 20 4c 13 f5 54 2."{.G.}|.. L..T
+0200: 94 21 60 b9 f3 92 71 07 12 be bb d6 75 f2 71 da .!`...q.....u.q.
+0210: ac 60 de 65 91 cd 3d 8e fc a9 dc 1c bf 41 a6 4c .`.e..=......A.L
+0220: f8 30 9f 07 2c 87 74 ff fd 7f 19 25 7c 86 f6 9e .0..,.t....%|...
+0230: 2b b8 6d af bb af fd d2 50 96 ba 9e d0 31 c6 c1 +.m.....P....1..
+0240: c0 9c 9b 20 e4 a3 6b 6d ce 08 11 c4 01 58 e1 8c ... ..km.....X..
+0250: e9 39 c5 dd e4 21 4f cd 3f 6a b5 53 02 03 01 00 .9...!O.?j.S....
+0260: 01 a3 21 30 1f 30 1d 06 03 55 1d 0e 04 16 04 14 ..!0.0...U......
+0270: 44 ba af a7 97 3a be ae d7 7e c6 3e 49 73 38 62 D....:...~.>Is8b
+0280: 1a 4e 09 1e 30 0d 06 09 2a 86 48 86 f7 0d 01 01 .N..0...*.H.....
+0290: 0c 05 00 03 82 01 01 00 77 9b b2 3f 3c de 16 0c ........w..?<...
+02a0: 92 5c d8 4e c4 28 3f ef 2b b2 91 cb 21 18 23 4e .\.N.(?.+...!.#N
+02b0: 91 c0 60 71 ff ec ed db 9e 4b 1c 6f 41 39 0c ef ..`q.....K.oA9..
+02c0: 2a 8d fe 6a 5b a9 62 dd 4f cb 50 79 33 98 35 22 *..j[.b.O.Py3.5"
+02d0: dc 3e 99 63 39 9b ce 90 76 0a b6 15 d1 45 c0 64 .>.c9...v....E.d
+02e0: 54 39 65 02 50 3a 9f 83 ab 98 9f 06 b1 0f e3 d3 T9e.P:..........
+02f0: 2b e1 14 d9 12 96 c8 f1 5b 6d 76 5c ee 7a a6 85 +.......[mv\.z..
+0300: 4b 34 42 01 ac dc 7e ca 3e 4b ce 7c d6 17 12 93 K4B...~.>K.|....
+0310: cc 68 48 eb 05 79 39 43 f9 72 29 5f 55 4d 4a 7f .hH..y9C.r)_UMJ.
+0320: 81 52 ad 03 d6 1a b7 47 12 c8 5b 59 0e 79 b9 ac .R.....G..[Y.y..
+0330: b8 a1 69 36 38 dc 15 0b 52 39 bf 34 72 f1 63 3d ..i68...R9.4r.c=
+0340: 0e 34 ed bb 7d 3b 3f 0b a4 b7 e0 13 d2 16 ad 0d .4..};?.........
+0350: 71 58 d7 4e 62 ef d3 04 2f 01 aa f7 cd 13 f2 91 qX.Nb.../.......
+0360: 27 26 32 be ed d3 9a 99 4c d4 2e 6a 79 ad c7 2e '&2.....L..jy...
+0370: 0b 56 b9 16 88 ec 6f f4 eb 7c 5b 62 3d da 14 88 .V....o..|[b=...
+0380: 54 df 86 c4 c0 2c b2 6a 52 10 53 07 9e 5a 29 fe T....,.jR.S..Z).
+0390: 37 f8 45 3d 8a d8 6e 86 00 00                   7.E=..n...
+== Info: (304) (IN), TLS handshake, CERT verify (15):
+<= Recv SSL data, 264 bytes (0x108)
+0000: 0f 00 01 04 08 06 01 00 3f 22 32 c9 be f0 a6 e2 ........?"2.....
+0010: 72 8b 87 02 99 15 6e c0 8a 30 1e 5b c3 ef 79 68 r.....n..0.[..yh
+0020: 9b 8f 66 c3 32 1a 32 65 30 6a 37 0e 0d 3f 23 14 ..f.2.2e0j7..?#.
+0030: ba 41 40 c9 0f 12 1f 33 04 bc 89 87 b4 36 34 30 .A@....3.....640
+0040: 65 28 e7 c5 d0 e4 b6 be e1 57 a0 0c d5 5d 5f d2 e(.......W...]_.
+0050: 5b bc 29 a5 ba 32 39 f1 1d 5f 28 2c ba b4 e9 4d [.)..29.._(,...M
+0060: 98 93 7f d9 59 03 56 3d aa 1e 60 c3 c5 2a 36 02 ....Y.V=..`..*6.
+0070: 32 a9 3b 74 c1 fe 91 47 2d ce 9b 2d 65 f1 52 4a 2.;t...G-..-e.RJ
+0080: f9 6a 8c 7a 3d 98 d6 03 40 f7 0c df 9e 2c 49 34 .j.z=...@....,I4
+0090: 99 7d 57 b7 4d b6 78 5a 67 d8 05 4e 28 8d 30 d8 .}W.M.xZg..N(.0.
+00a0: 28 51 21 69 a9 a8 52 30 a4 88 a8 b7 ee 4d 60 39 (Q!i..R0.....M`9
+00b0: 31 8d 9b 34 6a 63 10 46 a8 f6 05 29 35 39 9d 6d 1..4jc.F...)59.m
+00c0: 3f 77 9b 56 6c 6c d7 66 a1 24 c6 1d a7 b9 48 99 ?w.Vll.f.$....H.
+00d0: 8d 19 b4 f3 c1 0b 46 2a ec 00 68 02 e8 50 37 34 ......F*..h..P74
+00e0: 4e 8c 14 0e 3c 87 70 98 31 d2 15 59 1a bd e5 4d N...<.p.1..Y...M
+00f0: 24 2c 34 e5 96 5c 47 b9 5e 29 2e 62 e3 6a 92 4a $,4..\G.^).b.j.J
+0100: cd 7e 8d c3 cc fe 70 9d                         .~....p.
+== Info: (304) (IN), TLS handshake, Finished (20):
+<= Recv SSL data, 36 bytes (0x24)
+0000: 14 00 00 20 05 6b b5 07 72 d1 bc 5f ce c9 37 e7 ... .k..r.._..7.
+0010: da 59 ed 25 48 a7 2b 8c a9 65 71 d7 84 0f e9 af .Y.%H.+..eq.....
+0020: d0 3d fc eb                                     .=..
+== Info: (304) (OUT), TLS handshake, Finished (20):
+=> Send SSL data, 36 bytes (0x24)
+0000: 14 00 00 20 f0 17 be 4a d6 12 99 25 0c eb 9a 98 ... ...J...%....
+0010: de 6c 22 31 f9 ae f4 c0 a5 50 08 a8 42 28 03 f2 .l"1.....P..B(..
+0020: 49 72 d6 80                                     Ir..
+== Info: SSL connection using TLSv1.3 / AEAD-CHACHA20-POLY1305-SHA256
+== Info: ALPN: server did not agree on a protocol. Uses default.
+== Info: Server certificate:
+== Info:  subject: C=IN; ST=Tamil Nadu; L=Chennai; O=spring-test-ssl; OU=spring-test; CN=test
+== Info:  start date: Aug 19 10:43:17 2023 GMT
+== Info:  expire date: Nov 17 10:43:17 2023 GMT
+== Info:  issuer: C=IN; ST=Tamil Nadu; L=Chennai; O=spring-test-ssl; OU=spring-test; CN=test
+== Info:  SSL certificate verify result: self signed certificate (18), continuing anyway.
+== Info: using HTTP/1.x
+=> Send header, 77 bytes (0x4d)
+0000: 47 45 54 20 2f 20 48 54 54 50 2f 31 2e 31 0d 0a GET / HTTP/1.1..
+0010: 48 6f 73 74 3a 20 6c 6f 63 61 6c 68 6f 73 74 3a Host: localhost:
+0020: 38 30 38 30 0d 0a 55 73 65 72 2d 41 67 65 6e 74 8080..User-Agent
+0030: 3a 20 63 75 72 6c 2f 38 2e 31 2e 32 0d 0a 41 63 : curl/8.1.2..Ac
+0040: 63 65 70 74 3a 20 2a 2f 2a 0d 0a 0d 0a          cept: */*....
+<= Recv header, 15 bytes (0xf)
+0000: 48 54 54 50 2f 31 2e 31 20 34 30 34 20 0d 0a    HTTP/1.1 404 ..
+<= Recv header, 14 bytes (0xe)
+0000: 56 61 72 79 3a 20 4f 72 69 67 69 6e 0d 0a       Vary: Origin..
+<= Recv header, 37 bytes (0x25)
+0000: 56 61 72 79 3a 20 41 63 63 65 73 73 2d 43 6f 6e Vary: Access-Con
+0010: 74 72 6f 6c 2d 52 65 71 75 65 73 74 2d 4d 65 74 trol-Request-Met
+0020: 68 6f 64 0d 0a                                  hod..
+<= Recv header, 38 bytes (0x26)
+0000: 56 61 72 79 3a 20 41 63 63 65 73 73 2d 43 6f 6e Vary: Access-Con
+0010: 74 72 6f 6c 2d 52 65 71 75 65 73 74 2d 48 65 61 trol-Request-Hea
+0020: 64 65 72 73 0d 0a                               ders..
+<= Recv header, 32 bytes (0x20)
+0000: 43 6f 6e 74 65 6e 74 2d 54 79 70 65 3a 20 61 70 Content-Type: ap
+0010: 70 6c 69 63 61 74 69 6f 6e 2f 6a 73 6f 6e 0d 0a plication/json..
+<= Recv header, 28 bytes (0x1c)
+0000: 54 72 61 6e 73 66 65 72 2d 45 6e 63 6f 64 69 6e Transfer-Encodin
+0010: 67 3a 20 63 68 75 6e 6b 65 64 0d 0a             g: chunked..
+<= Recv header, 37 bytes (0x25)
+0000: 44 61 74 65 3a 20 53 75 6e 2c 20 32 30 20 41 75 Date: Sun, 20 Au
+0010: 67 20 32 30 32 33 20 30 32 3a 31 36 3a 34 36 20 g 2023 02:16:46 
+0020: 47 4d 54 0d 0a                                  GMT..
+<= Recv header, 2 bytes (0x2)
+0000: 0d 0a                                           ..
+<= Recv data, 95 bytes (0x5f)
+0000: 35 39 0d 0a 7b 22 74 69 6d 65 73 74 61 6d 70 22 59..{"timestamp"
+0010: 3a 22 32 30 32 33 2d 30 38 2d 32 30 54 30 32 3a :"2023-08-20T02:
+0020: 31 36 3a 34 36 2e 35 39 34 2b 30 30 3a 30 30 22 16:46.594+00:00"
+0030: 2c 22 73 74 61 74 75 73 22 3a 34 30 34 2c 22 65 ,"status":404,"e
+0040: 72 72 6f 72 22 3a 22 4e 6f 74 20 46 6f 75 6e 64 rror":"Not Found
+0050: 22 2c 22 70 61 74 68 22 3a 22 2f 22 7d 0d 0a    ","path":"/"}..
+<= Recv data, 5 bytes (0x5)
+0000: 30 0d 0a 0d 0a                                  0....
+== Info: Connection #0 to host localhost left intact

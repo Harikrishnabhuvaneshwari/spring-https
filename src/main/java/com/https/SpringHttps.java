@@ -1,17 +1,19 @@
-package com.logging;
+package com.https;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
-public class SpringLoggingExample {
+@RestController
+public class SpringHttps {
 
-	public static final  Logger LOGGER = LoggerFactory.getLogger(SpringLoggingExample.class);
+	public static final  Logger LOGGER = LoggerFactory.getLogger(SpringHttps.class);
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringLoggingExample.class, args);
+		SpringApplication.run(SpringHttps.class, args);
 		LOGGER.trace("SpringLoggingExample : Msg : {}","Trace log");
 		LOGGER.debug("SpringLoggingExample : Msg : {}", "Debug log");
 		LOGGER.info("SpringLoggingExample : Msg : {}", "Info log");

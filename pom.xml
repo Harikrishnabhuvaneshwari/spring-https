@@ -11,9 +11,9 @@
     </parent>
 
     <groupId>com.logging</groupId>
-    <artifactId>spring-logback-example</artifactId>
+    <artifactId>spring-https</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>spring-logback-example</name>
+    <name>spring-https</name>
     <description>Demo project for logging in Spring app using logback framework.</description>
     <properties>
         <java.version>17</java.version>

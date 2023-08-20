@@ -46,7 +46,7 @@
         </rollingPolicy>
     </appender>
 
-    <root level="TRACE">
+    <root level="INFO">
         <appender-ref ref="OUTPUT"/>
         <appender-ref ref="FILE"/>
     </root>
